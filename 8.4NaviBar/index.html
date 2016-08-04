@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>_8.4NaviBar</title>
+    <link href="lib/winjs-4.0.1/css/ui-light.css" rel="stylesheet" />
+    <script src="lib/winjs-4.0.1/js/base.js"></script>
+    <script src="lib/winjs-4.0.1/js/ui.js"></script>
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+</head>
+<body class="win-type-body">
+    <div id="createNavBar" data-win-control="WinJS.UI.NavBar" data-win-options="{
+                                                                placement: 'bottom',
+                                                                oninvoked: Sample.navBarInvoked }">
+        <div data-win-control="WinJS.UI.NavBarContainer">
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Home', icon: 'url(/pages/navbar/content/images/homeIcon.png)' }"></div>
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Favorite', icon: 'favorite' }"></div>
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Delete', icon: 'delete' }"></div>
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Music', icon: 'audio' }"></div>
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Edit', icon: 'edit' }"></div>
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Settings', icon: 'settings' }"></div>
+        </div>
+    </div>
+    <div class="box">
+        <div id="pane">
+            <button class="win-button" id="toggleNavBar">Show NavBar</button><br /><br />
+            <div id="status" style="overflow: auto; max-height: 240px;"></div><br />
+        </div>
+    </div>
+
+</body>
+</html>
